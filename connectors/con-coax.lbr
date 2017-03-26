@@ -124,6 +124,19 @@
 <text x="-5.08" y="8.89" size="1.016" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="-5.08" y="7.62" size="1.016" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 </package>
+<package name="MMCX_PCB_90">
+<pad name="C" x="0" y="0" drill="1"/>
+<pad name="S4" x="-1.27" y="1.27" drill="1"/>
+<pad name="S3" x="1.27" y="1.27" drill="1"/>
+<pad name="S2" x="1.27" y="-1.27" drill="1"/>
+<pad name="S1" x="-1.27" y="-1.27" drill="1"/>
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="21"/>
+<text x="-2" y="4" size="1.016" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-2" y="2.8" size="1.016" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CON_COAX">
@@ -144,6 +157,22 @@
 </gates>
 <devices>
 <device name="90" package="F_PCB_90">
+<connects>
+<connect gate="G$1" pin="CENTER" pad="C"/>
+<connect gate="G$1" pin="SHIELD" pad="S1 S2 S3 S4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MMCX_PCB" prefix="X">
+<gates>
+<gate name="G$1" symbol="CON_COAX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="90" package="MMCX_PCB_90">
 <connects>
 <connect gate="G$1" pin="CENTER" pad="C"/>
 <connect gate="G$1" pin="SHIELD" pad="S1 S2 S3 S4"/>
