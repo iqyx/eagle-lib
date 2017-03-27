@@ -28,23 +28,23 @@
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -90,6 +90,25 @@ TS-003</description>
 <vertex x="2.5654" y="4.6482"/>
 <vertex x="2.5654" y="3.937"/>
 </polygon>
+</package>
+<package name="POWERSO8">
+<description>&lt;B&gt;Small Outline Narrow Plastic Gull Wing&lt;/B&gt;&lt;p&gt;
+150-mil body, package type SN</description>
+<smd name="2" x="-3.1" y="0.635" dx="0.6" dy="1.5" layer="1" roundness="50" rot="R270"/>
+<smd name="7" x="3.1" y="0.635" dx="0.6" dy="1.5" layer="1" roundness="50" rot="R270"/>
+<smd name="1" x="-3.1" y="1.905" dx="0.6" dy="1.5" layer="1" roundness="50" rot="R270"/>
+<smd name="3" x="-3.1" y="-0.635" dx="0.6" dy="1.5" layer="1" roundness="50" rot="R270"/>
+<smd name="4" x="-3.1" y="-1.905" dx="0.6" dy="1.5" layer="1" roundness="50" rot="R270"/>
+<smd name="8" x="3.1" y="1.905" dx="0.6" dy="1.5" layer="1" roundness="50" rot="R270"/>
+<smd name="6" x="3.1" y="-0.635" dx="0.6" dy="1.5" layer="1" roundness="50" rot="R270"/>
+<smd name="5" x="3.1" y="-1.905" dx="0.6" dy="1.5" layer="1" roundness="50" rot="R270"/>
+<wire x1="-3" y1="2.5" x2="3" y2="2.5" width="0.2" layer="21"/>
+<wire x1="3" y1="2.5" x2="3" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="3" y1="-2.5" x2="-3" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="-3" y1="-2.5" x2="-3" y2="2.5" width="0.2" layer="21"/>
+<smd name="PAD" x="0.6" y="0" dx="4.4" dy="4.4" layer="1" roundness="10"/>
+<text x="-3" y="4.5" size="1.016" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-3" y="3" size="1.016" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -183,6 +202,23 @@ TS-003</description>
 <connect gate="G$1" pin="D" pad="4"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="N_MOSFET_POWERSO8">
+<gates>
+<gate name="G$1" symbol="MOSFET_N" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POWERSO8">
+<connects>
+<connect gate="G$1" pin="D" pad="5 6 7 8 PAD"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="S" pad="1 2 3"/>
 </connects>
 <technologies>
 <technology name=""/>
