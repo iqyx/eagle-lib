@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -268,6 +268,69 @@
 <rectangle x1="-7.878" y1="5.365" x2="-6.873" y2="5.635" layer="51"/>
 <rectangle x1="-7.878" y1="5.865" x2="-6.873" y2="6.135" layer="51"/>
 </package>
+<package name="LQFP48">
+<description>&lt;b&gt;48-pin plastic LQFP (FPT-48P-M26)&lt;/b&gt;&lt;p&gt;
+www.fma.fujitsu.com/pdf/e713717.pdf</description>
+<wire x1="-3.375" y1="3.1" x2="-3.1" y2="3.375" width="0.254" layer="21"/>
+<wire x1="-3.1" y1="3.375" x2="3.1" y2="3.375" width="0.254" layer="21"/>
+<wire x1="3.1" y1="3.375" x2="3.375" y2="3.1" width="0.254" layer="21"/>
+<wire x1="3.375" y1="3.1" x2="3.375" y2="-3.1" width="0.254" layer="21"/>
+<wire x1="3.375" y1="-3.1" x2="3.1" y2="-3.375" width="0.254" layer="21"/>
+<wire x1="3.1" y1="-3.375" x2="-3.1" y2="-3.375" width="0.254" layer="21"/>
+<wire x1="-3.1" y1="-3.375" x2="-3.375" y2="-3.1" width="0.254" layer="21"/>
+<wire x1="-3.375" y1="-3.1" x2="-3.375" y2="3.1" width="0.254" layer="21"/>
+<circle x="-2.5" y="-2.5" radius="0.2" width="0.254" layer="21"/>
+<smd name="1" x="-2.75" y="-4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="2" x="-2.25" y="-4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="3" x="-1.75" y="-4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="4" x="-1.25" y="-4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="5" x="-0.75" y="-4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="6" x="-0.25" y="-4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="7" x="0.25" y="-4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="8" x="0.75" y="-4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="9" x="1.25" y="-4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="10" x="1.75" y="-4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="11" x="2.25" y="-4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="12" x="2.75" y="-4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="13" x="4.25" y="-2.75" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="14" x="4.25" y="-2.25" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="15" x="4.25" y="-1.75" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="16" x="4.25" y="-1.25" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="17" x="4.25" y="-0.75" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="18" x="4.25" y="-0.25" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="19" x="4.25" y="0.25" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="20" x="4.25" y="0.75" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="21" x="4.25" y="1.25" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="22" x="4.25" y="1.75" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="23" x="4.25" y="2.25" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="24" x="4.25" y="2.75" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="25" x="2.75" y="4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="26" x="2.25" y="4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="27" x="1.75" y="4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="28" x="1.25" y="4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="29" x="0.75" y="4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="30" x="0.25" y="4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="31" x="-0.25" y="4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="32" x="-0.75" y="4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="33" x="-1.25" y="4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="34" x="-1.75" y="4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="35" x="-2.25" y="4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="36" x="-2.75" y="4.25" dx="0.25" dy="1.5" layer="1" roundness="50"/>
+<smd name="37" x="-4.25" y="2.75" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="38" x="-4.25" y="2.25" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="39" x="-4.25" y="1.75" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="40" x="-4.25" y="1.25" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="41" x="-4.25" y="0.75" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="42" x="-4.25" y="0.25" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="43" x="-4.25" y="-0.25" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="44" x="-4.25" y="-0.75" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="45" x="-4.25" y="-1.25" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="46" x="-4.25" y="-1.75" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="47" x="-4.25" y="-2.25" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<smd name="48" x="-4.25" y="-2.75" dx="1.5" dy="0.25" layer="1" roundness="50"/>
+<text x="-4" y="7" size="1.016" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-4" y="5.5" size="1.016" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F303XB">
@@ -377,6 +440,12 @@
 <pin name="VDD@4" x="-25.4" y="60.96" length="middle"/>
 <text x="-20.32" y="88.9" size="1.778" layer="95">&gt;NAME</text>
 <text x="-20.32" y="86.36" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32F303RDT6">
+<wire x1="-12.7" y1="22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="22.86" x2="12.7" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-25.4" x2="-12.7" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-25.4" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>

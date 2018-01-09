@@ -110,6 +110,22 @@ TS-003</description>
 <text x="-3" y="4.5" size="1.016" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="-3" y="3" size="1.016" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 </package>
+<package name="POWERPAK-SC70-6L">
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="21"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="21"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="21"/>
+<smd name="1" x="-0.65" y="-1" dx="0.3" dy="0.5" layer="1" roundness="50"/>
+<smd name="2" x="0" y="-1" dx="0.3" dy="0.5" layer="1" roundness="50"/>
+<smd name="3" x="0.65" y="-1" dx="0.3" dy="0.5" layer="1" roundness="50"/>
+<smd name="6" x="-0.65" y="1" dx="0.3" dy="0.5" layer="1" roundness="50"/>
+<smd name="5" x="0" y="1" dx="0.3" dy="0.5" layer="1" roundness="50"/>
+<smd name="4" x="0.65" y="1" dx="0.3" dy="0.5" layer="1" roundness="50"/>
+<smd name="D1" x="-0.325" y="0" dx="0.95" dy="1.7" layer="1"/>
+<smd name="D2" x="0.65" y="0" dx="0.3" dy="0.9" layer="1" roundness="50"/>
+<text x="-1" y="3.5" size="1.016" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-1" y="2" size="1.016" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MOSFET_N">
@@ -219,6 +235,40 @@ TS-003</description>
 <connect gate="G$1" pin="D" pad="5 6 7 8 PAD"/>
 <connect gate="G$1" pin="G" pad="4"/>
 <connect gate="G$1" pin="S" pad="1 2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="N_MOSFET_POWERPAK_SC70_SINGLE" prefix="Q">
+<gates>
+<gate name="G$1" symbol="MOSFET_N" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POWERPAK-SC70-6L">
+<connects>
+<connect gate="G$1" pin="D" pad="1 2 5 6 D1"/>
+<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="S" pad="4 D2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P_MOSFET_POWERPAK_SC70_SINGLE" prefix="Q">
+<gates>
+<gate name="G$1" symbol="MOSFET_P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POWERPAK-SC70-6L">
+<connects>
+<connect gate="G$1" pin="D" pad="1 2 5 6 D1"/>
+<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="S" pad="4 D2"/>
 </connects>
 <technologies>
 <technology name=""/>
