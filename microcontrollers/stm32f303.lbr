@@ -447,6 +447,62 @@ www.fma.fujitsu.com/pdf/e713717.pdf</description>
 <wire x1="12.7" y1="-25.4" x2="-12.7" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-25.4" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
 </symbol>
+<symbol name="STM32F303CC">
+<wire x1="-20.32" y1="83.82" x2="20.32" y2="83.82" width="0.254" layer="94"/>
+<wire x1="20.32" y1="83.82" x2="20.32" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-2.54" x2="-20.32" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-2.54" x2="-20.32" y2="83.82" width="0.254" layer="94"/>
+<pin name="VBAT" x="-25.4" y="81.28" length="middle"/>
+<pin name="PC14/OSC32_IN" x="-25.4" y="35.56" length="middle"/>
+<pin name="PC15/OSC32_OUT" x="-25.4" y="33.02" length="middle"/>
+<pin name="PF0/OSC_IN" x="-25.4" y="53.34" length="middle"/>
+<pin name="PF1/OSC_OUT" x="-25.4" y="50.8" length="middle"/>
+<pin name="NRST" x="-25.4" y="78.74" length="middle"/>
+<pin name="PA2" x="25.4" y="76.2" length="middle" rot="R180"/>
+<pin name="VSSA/VREF-" x="-25.4" y="20.32" length="middle"/>
+<pin name="VDDA" x="-25.4" y="71.12" length="middle"/>
+<pin name="PA0" x="25.4" y="81.28" length="middle" rot="R180"/>
+<pin name="PA1" x="25.4" y="78.74" length="middle" rot="R180"/>
+<pin name="PA3" x="25.4" y="73.66" length="middle" rot="R180"/>
+<pin name="VDD@1" x="-25.4" y="68.58" length="middle"/>
+<pin name="PA5" x="25.4" y="68.58" length="middle" rot="R180"/>
+<pin name="PA6" x="25.4" y="66.04" length="middle" rot="R180"/>
+<pin name="PA7" x="25.4" y="63.5" length="middle" rot="R180"/>
+<pin name="PB0" x="25.4" y="38.1" length="middle" rot="R180"/>
+<pin name="PB1" x="25.4" y="35.56" length="middle" rot="R180"/>
+<pin name="PB2" x="25.4" y="33.02" length="middle" rot="R180"/>
+<pin name="PA4" x="25.4" y="71.12" length="middle" rot="R180"/>
+<pin name="PB10" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="PB11" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="VSS@2" x="-25.4" y="12.7" length="middle"/>
+<pin name="VDD@2" x="-25.4" y="66.04" length="middle"/>
+<pin name="PB12" x="25.4" y="7.62" length="middle" rot="R180"/>
+<pin name="PB13" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="PB14" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="PB15" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="PA8" x="25.4" y="60.96" length="middle" rot="R180"/>
+<pin name="PA9" x="25.4" y="58.42" length="middle" rot="R180"/>
+<pin name="PA10" x="25.4" y="55.88" length="middle" rot="R180"/>
+<pin name="PA11" x="25.4" y="53.34" length="middle" rot="R180"/>
+<pin name="PA12" x="25.4" y="50.8" length="middle" rot="R180"/>
+<pin name="PA13" x="25.4" y="48.26" length="middle" rot="R180"/>
+<pin name="VSS@3" x="-25.4" y="10.16" length="middle"/>
+<pin name="VDD@3" x="-25.4" y="63.5" length="middle"/>
+<pin name="PA14" x="25.4" y="45.72" length="middle" rot="R180"/>
+<pin name="PA15" x="25.4" y="43.18" length="middle" rot="R180"/>
+<pin name="PB3" x="25.4" y="30.48" length="middle" rot="R180"/>
+<pin name="PB4" x="25.4" y="27.94" length="middle" rot="R180"/>
+<pin name="PB5" x="25.4" y="25.4" length="middle" rot="R180"/>
+<pin name="PB6" x="25.4" y="22.86" length="middle" rot="R180"/>
+<pin name="PB7" x="25.4" y="20.32" length="middle" rot="R180"/>
+<pin name="BOOT0" x="-25.4" y="45.72" length="middle"/>
+<pin name="PB8" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="PB9" x="25.4" y="15.24" length="middle" rot="R180"/>
+<text x="-20.32" y="88.9" size="1.778" layer="95">&gt;NAME</text>
+<text x="-20.32" y="86.36" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="PC13" x="-25.4" y="38.1" length="middle"/>
+<pin name="VSS@1" x="-25.4" y="15.24" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STM32F303XB" prefix="IC">
@@ -556,6 +612,68 @@ www.fma.fujitsu.com/pdf/e713717.pdf</description>
 <connect gate="G$1" pin="VSS@3" pad="74"/>
 <connect gate="G$1" pin="VSS@4" pad="99"/>
 <connect gate="G$1" pin="VSSA/VREF-" pad="20"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STM32F303CC">
+<gates>
+<gate name="G$1" symbol="STM32F303CC" x="0" y="-40.64"/>
+</gates>
+<devices>
+<device name="" package="LQFP48">
+<connects>
+<connect gate="G$1" pin="BOOT0" pad="44"/>
+<connect gate="G$1" pin="NRST" pad="7"/>
+<connect gate="G$1" pin="PA0" pad="10"/>
+<connect gate="G$1" pin="PA1" pad="11"/>
+<connect gate="G$1" pin="PA10" pad="31"/>
+<connect gate="G$1" pin="PA11" pad="32"/>
+<connect gate="G$1" pin="PA12" pad="33"/>
+<connect gate="G$1" pin="PA13" pad="34"/>
+<connect gate="G$1" pin="PA14" pad="37"/>
+<connect gate="G$1" pin="PA15" pad="38"/>
+<connect gate="G$1" pin="PA2" pad="12"/>
+<connect gate="G$1" pin="PA3" pad="13"/>
+<connect gate="G$1" pin="PA4" pad="14"/>
+<connect gate="G$1" pin="PA5" pad="15"/>
+<connect gate="G$1" pin="PA6" pad="16"/>
+<connect gate="G$1" pin="PA7" pad="17"/>
+<connect gate="G$1" pin="PA8" pad="29"/>
+<connect gate="G$1" pin="PA9" pad="30"/>
+<connect gate="G$1" pin="PB0" pad="18"/>
+<connect gate="G$1" pin="PB1" pad="19"/>
+<connect gate="G$1" pin="PB10" pad="21"/>
+<connect gate="G$1" pin="PB11" pad="22"/>
+<connect gate="G$1" pin="PB12" pad="25"/>
+<connect gate="G$1" pin="PB13" pad="26"/>
+<connect gate="G$1" pin="PB14" pad="27"/>
+<connect gate="G$1" pin="PB15" pad="28"/>
+<connect gate="G$1" pin="PB2" pad="20"/>
+<connect gate="G$1" pin="PB3" pad="39"/>
+<connect gate="G$1" pin="PB4" pad="40"/>
+<connect gate="G$1" pin="PB5" pad="41"/>
+<connect gate="G$1" pin="PB6" pad="42"/>
+<connect gate="G$1" pin="PB7" pad="43"/>
+<connect gate="G$1" pin="PB8" pad="45"/>
+<connect gate="G$1" pin="PB9" pad="46"/>
+<connect gate="G$1" pin="PC13" pad="2"/>
+<connect gate="G$1" pin="PC14/OSC32_IN" pad="3"/>
+<connect gate="G$1" pin="PC15/OSC32_OUT" pad="4"/>
+<connect gate="G$1" pin="PF0/OSC_IN" pad="5"/>
+<connect gate="G$1" pin="PF1/OSC_OUT" pad="6"/>
+<connect gate="G$1" pin="VBAT" pad="1"/>
+<connect gate="G$1" pin="VDD@1" pad="24"/>
+<connect gate="G$1" pin="VDD@2" pad="36"/>
+<connect gate="G$1" pin="VDD@3" pad="48"/>
+<connect gate="G$1" pin="VDDA" pad="9"/>
+<connect gate="G$1" pin="VSS@1" pad="23"/>
+<connect gate="G$1" pin="VSS@2" pad="35"/>
+<connect gate="G$1" pin="VSS@3" pad="47"/>
+<connect gate="G$1" pin="VSSA/VREF-" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
